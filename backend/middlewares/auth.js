@@ -13,7 +13,7 @@ export const isLogged = (req, res, next) => {
 
   try {
     const verified = jwt.verify(token, process.env.secret);
-    console.log("✅ Decoded token:", verified); 
+   
     if (!verified) {
       return res.status(403).json({ message: "Invalid token" })
     }
