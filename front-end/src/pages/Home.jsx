@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../componants/Navbar";
 import Sidebar from "../componants/Sidebar";
-import UserLists from "../componants/UserLists";
+import TaskTable from "../componants/TaskTable";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
         <div className="flex flex-col md:flex-row h-full">
           <Sidebar />
           <div className="bg-gray-200 w-full p-4">
-            <UserLists />
+            <TaskTable />
           </div>
         </div>
       </div>

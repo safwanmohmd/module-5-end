@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Table from "./Table";
+import TableBody from "./TableBody";
 import axios from "axios";
 
-const UserLists = () => {
+const TaskTable = () => {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
@@ -152,7 +152,9 @@ const UserLists = () => {
               </tr>
             </thead>
             {tasks.map((x) => (
-              <Table key={x._id} refreshtasks={fetchtasks} tasks={x} />
+
+              
+              <TableBody key={x._id} refreshtasks={fetchtasks} tasks={x} />
             ))}
           </table>
         )}
@@ -161,4 +163,4 @@ const UserLists = () => {
   );
 };
 
-export default UserLists;
+export default TaskTable;

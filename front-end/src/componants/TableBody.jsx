@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 
-const Table = ({ tasks, refreshtasks }) => {
+const TableBody = ({ tasks, refreshtasks }) => {
   const [user, setUser] = useState();
   const [isEditing, setIsEditing] = useState(false);
   const [title, setTitle] = useState(tasks.title);
@@ -178,4 +178,4 @@ const Table = ({ tasks, refreshtasks }) => {
   );
 };
 
-export default Table;
+export default TableBody;
